@@ -1,0 +1,87 @@
+@import "constants";
+
+.footer {
+    padding-top: 153px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &_adress {
+            max-width: 335px;
+
+            &--logo {
+                display: flex;
+
+                & span {
+                    padding-left: 20px;
+                    padding-top: 4px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: 32px;
+                }
+            }
+
+            &--map {
+                padding-top: 65px;
+                font-weight: 700;
+            }
+
+            &--contacts {
+                padding-top: 20px;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    &__nav {
+
+        &_title {
+            font-weight: 900;
+            line-height: 25.6px;
+        }
+
+        &_items {
+            padding-top: 30px;
+        }
+
+        & li {
+            padding-bottom: 20px;
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__social {
+
+        &_items {
+            padding-top: 47px;
+
+            & a {
+                color: #FFFFFF;
+                background: $color-dark;
+                opacity: 0.1;
+                border-radius: 50%;
+                padding: 17px;
+                margin-right: 12px;
+                cursor: pointer;
+    
+                &:first-child {
+                    padding: 17px 20px;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 96px 0;
+    }
+
+}

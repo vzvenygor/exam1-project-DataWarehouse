@@ -1,0 +1,63 @@
+@import "constants";
+
+.header {
+    margin-top: 38px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    &__logo {
+
+        & img {
+            width: 40px;
+            height: 35px;
+        }
+    }
+
+    &__navigation nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 98px;
+        padding-right: 300px;
+
+        & li {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 0.005em;
+            color: $color-light;
+            padding-right: 30px;
+
+            &:hover {
+                font-weight: 800;
+                color: $color-dark;
+            }
+        }
+    }
+}
+
+.button__demo {
+    padding: 10px 0 10px 20px;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    background-color: #FFFFFF;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.5%;
+    cursor: pointer;
+
+    &::after {
+        content: "\27F6";
+        color: #9C69E2;
+        padding: 0 20px 0 10px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: $button-demo-hover-color;
+        color: #FFFFFF;
+
+        &::after {
+            color: #FFFFFF;
+        }
+    }
+}

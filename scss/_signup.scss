@@ -1,0 +1,40 @@
+.signup {
+    display: flex;
+    justify-content: space-between;
+    // vertical-align: middle;
+    padding-top: 250px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #9C69E2;
+        opacity: 20%;
+        top: 150px;
+    }
+
+    &__content {
+
+        &_title {
+            padding-bottom: 20px;
+        }
+
+        &_buttons {
+            display: flex;
+            padding-top: 20px;
+        }
+
+        &_button {
+            margin-right: 30px;
+            padding: 18px 39px;
+            background: $button-demo-hover-color;
+            color: #FFFFFF;
+
+            &:hover {
+                background: #9C69E2;
+            }
+        }
+    }
+}

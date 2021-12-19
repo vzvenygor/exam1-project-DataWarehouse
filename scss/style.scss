@@ -1,0 +1,71 @@
+@import "constants";
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(/assets/fonts/Avenir/avenirnextcyr-regular.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/assets/fonts/Helvetica/helveticaneuecyr-roman.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease-out;
+}
+
+body {
+    background: linear-gradient(#F6FAFD, #FFFFFF 35%);
+}
+
+.container {
+    max-width: 900px;
+    // margin: 0 190px;
+    margin: 0 auto ;
+    font-family: 'Avenir', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Helvetica', sans-serif;
+    color: $color-dark;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.button {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 29px;
+    color: $color-light;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px
+}
+
+@import "header";
+@import "top";
+@import "about";
+@import "features";
+@import "testimonials";
+@import "signup";
+@import "footer";
