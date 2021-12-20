@@ -1,8 +1,7 @@
 .signup {
     display: flex;
     justify-content: space-between;
-    // vertical-align: middle;
-    padding-top: 250px;
+    padding-top: 196px;
     position: relative;
 
     &::before {
@@ -12,13 +11,14 @@
         width: 100%;
         background: #9C69E2;
         opacity: 20%;
-        top: 150px;
+        top: 120px;
     }
 
     &__content {
 
         &_title {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+            letter-spacing: 0.08em;
         }
 
         &_buttons {
@@ -28,7 +28,7 @@
 
         &_button {
             margin-right: 30px;
-            padding: 18px 39px;
+            padding: 16px 34px;
             background: $button-demo-hover-color;
             color: #FFFFFF;
 
