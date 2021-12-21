@@ -1,65 +1,75 @@
 @import "constants";
+@import "mixins";
 
 @font-face {
-    font-family: 'Avenir';
-    src: url(/assets/fonts/Avenir/avenirnextcyr-regular.ttf);
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir/avenirnextcyr-regular.ttf);
 }
 
 @font-face {
-    font-family: 'Helvetica';
-    src: url(/assets/fonts/Helvetica/helveticaneuecyr-roman.ttf);
+  font-family: "Helvetica";
+  src: url(../assets/fonts/Helvetica/helveticaneuecyr-roman.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    transition: 0.5s ease-out;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease-out;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(#F6FAFD, #FFFFFF 35%);
+  background: linear-gradient(#f6fafd, #ffffff 35%);
+  font-family: "Avenir", sans-serif;
 }
 
 .container {
-    max-width: 900px;
-    // margin: 0 190px;
-    margin: 0 auto ;
-    font-family: 'Avenir', sans-serif;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Helvetica', sans-serif;
-    color: $color-dark;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Helvetica", sans-serif;
+  color: $color-dark;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .button {
-    border: 1px solid transparent;
-    border-radius: 50px;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .paragraph {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 29px;
-    color: $color-light;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  color: $color-light;
 }
 
 .section-title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 52px
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+
+  @include media-screen-xs {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 @import "header";

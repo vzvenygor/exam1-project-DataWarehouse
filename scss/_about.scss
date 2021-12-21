@@ -1,38 +1,73 @@
+@import "constants";
+@import "mixins";
+
 .about {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  margin-top: 76px;
+
+  @include media-screen-small {
+    margin-top: 46px;
+  }
+
+  @include media-screen-big {
+    margin-left: 35px;
+  }
+
+  @include media-screen-small {
+    margin: 0 20px;
+  }
+
+  & .container {
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
-    margin-top: 40px;
+    max-width: 1090px;
+  }
 
-    &__img {
-        max-width: 390px;
-        padding-top: 22px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
 
-        & img {
-            width: 100%;
-        }
+    @include media-screen-tablet {
+      display: block;
+      text-align: center;
     }
 
-    &__content {
-        max-width: 430px;
-        padding-left: 54px;
+    &_img {
+      & img {
+        width: 100%;
+      }
 
-        &_title {
-            padding-top: 90px;
-            padding-bottom: 28px;
-            line-height: 42px;
-            letter-spacing: 0.06em;
-        }
-
-        &_paragraph {
-            max-width: 374px;
-            max-height: 170px;
-            overflow: hidden;
-            padding-bottom: 80px;
-            line-height: 24px;
-            letter-spacing: 0.01em;
-        }
+      @include media-screen-small {
+        width: 90%;
+      }
     }
+
+    &_descr {
+      padding-top: 87px;
+      padding-left: 58px;
+
+      @include media-screen-tablet {
+        padding: 47px 30px;
+      }
+
+      @include media-screen-small {
+        padding: 37px 10px;
+      }
+    }
+
+    &_title {
+      letter-spacing: 0.03em;
+    }
+
+    &_paragraph {
+      font-size: 18px;
+      padding-top: 38px;
+      padding-right: 54px;
+      padding-bottom: 50px;
+
+      @include media-screen-tablet {
+        padding-right: 0;
+      }
+    }
+  }
 }

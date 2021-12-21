@@ -1,52 +1,86 @@
 @import "constants";
+@import "mixins";
 
 .top {
-    padding-top: 104px;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    background: url(../assets/img/top-bg.png) no-repeat;
-    background-position: 80% 84%;
-    background-size: 48%;
+  padding-top: 136px;
 
-    &__content {
-        text-align: left;
+  @include media-screen-xs {
+    padding-top: 60px;
+  }
 
-        &_title {
-            font-size: 60px;
-            line-height: 74px;
-            font-weight: bolder;
-            max-width: 620px;
-            letter-spacing: 0.07em;
-        }
-    
-        &_paragraph {
-            max-width: 310px;
-            padding: 38px 0;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.02em;
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 25px;
+    position: relative;
 
-        }
-
-        &_button-container {
-            padding-bottom: 120px;
-        }
-    
-        &_button {
-            padding: 10px 32px;
-            background: #9C69E2;
-            color: #FFFFFF;
-            font-size: 14px;
-            line-height: 29px;
-            cursor: pointer;
-    
-            &:hover {
-                background: $button-demo-hover-color;
-            }
-        }
-    
+    &_descr {
+      flex: 50%;
+      width: 50%;
     }
+
+    &_title {
+      font-size: 80px;
+      line-height: 86px;
+      font-weight: bolder;
+      max-width: 620px;
+      letter-spacing: 0.03em;
+
+      @include media-screen-xs {
+        font-size: 40px;
+        line-height: 56px;
+      }
+    }
+
+    &_paragraph {
+      max-width: 380px;
+      padding: 56px 0;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+    }
+
+    &_button-container {
+      padding-bottom: 120px;
+    }
+
+    &_button {
+      padding: 16px 37px;
+      background: #9c69e2;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 29px;
+      cursor: pointer;
+
+      &:hover {
+        background: $button-demo-hover-color;
+      }
+    }
+  }
+
+  &__img {
+    flex: 40%;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    margin-right: -10%;
+    z-index: -10;
+
+    @include media-screen-tablet {
+      bottom: 0;
+    }
+
+    @include media-screen-small {
+      display: none;
+    }
+
+    & img {
+      width: 100%;
+
+      @include media-screen-big {
+        width: 90%;
+      }
+    }
+  }
 }
-
-

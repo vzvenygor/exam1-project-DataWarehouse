@@ -1,0 +1,37 @@
+@import "constants";
+
+@mixin media-screen-big {
+  @media screen and (max-width: $screen-big) {
+    @content;
+  }
+}
+
+@mixin media-screen-medium {
+  @media screen and (max-width: $screen-medium) {
+    @content;
+  }
+}
+
+@mixin media-screen-tablet {
+  @media screen and (max-width: $screen-tablet) {
+    @content;
+  }
+}
+
+@mixin media-screen-small {
+  @media screen and (max-width: $screen-small) {
+    @content;
+  }
+}
+
+@mixin media-screen-xs {
+  @media screen and (max-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin media-screen-xxs {
+  @media screen and (max-width: $screen-xxs) {
+    @content;
+  }
+}
