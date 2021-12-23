@@ -9,7 +9,7 @@
   }
 
   @include media-screen-big {
-    margin-left: 35px;
+    margin-left: 8%;
   }
 
   @include media-screen-small {
@@ -33,12 +33,12 @@
     }
 
     &_img {
-      & img {
-        width: 100%;
-      }
 
-      @include media-screen-small {
-        width: 90%;
+      & img {
+
+        @include media-screen-tablet {
+          width: 100%;
+        }
       }
     }
 
@@ -63,7 +63,7 @@
       font-size: 18px;
       padding-top: 38px;
       padding-right: 54px;
-      padding-bottom: 50px;
+      padding-bottom: 125px;
 
       @include media-screen-tablet {
         padding-right: 0;

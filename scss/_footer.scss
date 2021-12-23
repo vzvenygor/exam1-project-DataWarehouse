@@ -12,10 +12,14 @@
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
 
     @include media-screen-tablet {
-      display: block;
-      text-align: center;
+      justify-content: center;    
+    }
+
+    @include media-screen-xs {
+      text-align: center;    
     }
 
     &_adress {
@@ -59,10 +63,15 @@
     display: flex;
 
     @include media-screen-tablet {
-      padding-left: 0;
+      padding-left: 10%;
       padding-top: 32px;
       justify-content: center;
     }
+
+    @include media-screen-xs {
+      padding: 10%;    
+    }
+
 
     &_title {
       font-size: 16px;
@@ -99,7 +108,13 @@
       }
 
       @include media-screen-tablet {
-        padding-left: 0;
+        padding-left: 10%;
+      }
+
+      @include media-screen-small {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
       }
     }
 

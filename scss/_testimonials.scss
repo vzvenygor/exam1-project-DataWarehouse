@@ -2,14 +2,14 @@
 @import "mixins";
 
 .testimonials {
-  margin-top: 138px;
+  margin-top: 130px;
   background: #9c69e2;
   border-radius: 50px;
   max-width: 1090px;
   height: 710px;
 
   @include media-screen-big {
-    margin-left: 35px;
+    margin-left: 8%;
   }
 
   @include media-screen-small {

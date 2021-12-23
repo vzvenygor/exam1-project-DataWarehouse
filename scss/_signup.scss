@@ -44,7 +44,8 @@
 
     &_buttons {
       display: flex;
-      padding-top: 20px;
+      align-items: center;
+      padding-top: 38px;
 
       @include media-screen-tablet {
         justify-content: center;
@@ -62,7 +63,7 @@
         }
 
         @include media-screen-xs {
-          margin: 0 auto;
+          margin: 18%;
         }
       }
     }
